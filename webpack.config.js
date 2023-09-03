@@ -1,12 +1,26 @@
 const path = require('path');
 
 module.exports = {
-  entry: './src/index.js',
-  output: {
+    mode: 'development',
+    entry: './src/index.js',
+    devtool: 'inline-source-map',
+    output: {
     filename: 'main.js',
     path: path.resolve(__dirname, 'dist'),
+    clean: true,
   },
-  module: {
+  devServer:{
+    static:{
+        directory: path.resolve(__dirname, 'dist')
+    },
+    port:3000,
+    open:true,
+    hot:true,
+    compress:true,
+    historyApiFallback:true
+
+  },
+    module: {
     rules: [
       {
         test: /\.css$/i,
