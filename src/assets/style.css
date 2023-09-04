@@ -6,6 +6,7 @@
     --header-color:#49111C;
     --main-color:#A9927D;
     --sub-color:#5e503f;
+    --text-color: #f2f4f3;
 }
 
 
@@ -13,6 +14,10 @@ body{
     margin: 0;
     padding: 0;
     height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--main-color);
 }
 
 ul{
@@ -63,4 +68,25 @@ ul{
 
 [data-selected]{
     background-color: var(--sub-color);
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    height: 50%;
+    background-color: var(--sub-color);
+    color:var(--text-color) ;
+    border-radius: 25px;
+}
+
+.container h1{
+    font-size: 2.5rem;
+    font-weight: 900;
+}
+.container .description{
+    margin-top: 10px;
+    padding:50px;
+    font-size: 2rem;
 }
