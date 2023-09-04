@@ -25,6 +25,9 @@ ul{
     background-color: var(--header-color);
     display:flex;
     justify-content: space-between;
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
 .logo{
@@ -50,6 +53,10 @@ ul{
     width: 80px;
     height: 40px;
     text-align: center;
+    
+}
+#navbar ul li:hover{
+  cursor: pointer;
     
 }
 
