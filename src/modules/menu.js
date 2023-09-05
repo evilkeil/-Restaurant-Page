@@ -4,27 +4,29 @@ import kottu from './kottu.jpg';
 import { menuItems } from './textObjexts';
 
 
-function createItem1(){
+function createItem(n,food){
+    const itemName = `item${n}`;
+
     const item = document.createElement('div');
-    item.classList.add('item-1');
+    item.classList.add(`item-${n}`);
 
     const text = document.createElement('div');
     text.classList.add('text');
     item.appendChild(text);
 
     const h2 = document.createElement('h2');
-    h2.textContent = menuItems.item1.name;
+    h2.textContent = menuItems[itemName].name;
     text.appendChild(h2);
 
     const para = document.createElement('p');
     para.classList.add('menu-descript');
-    para.textContent=menuItems.item1.description;
+    para.textContent=menuItems[itemName].description;
     text.appendChild(para);
 
     const img = document.createElement('div');
     img.classList.add('img');
     const imgTag = new Image();
-    imgTag.src = curry;
+    imgTag.src = food;
     img.appendChild(imgTag);
     item.appendChild(img);
 
@@ -62,12 +64,15 @@ function createItem2(){
 
 
 
+
+
 export default function menuPageComponent(){
     const menu = document.createElement('div');
     menu.classList.add('menu');
 
-   menu.appendChild(createItem1());
+   menu.appendChild(createItem(1,curry));
    menu.appendChild(createItem2());
+   menu.appendChild(createItem(3,kottu));
   
     return menu;
 

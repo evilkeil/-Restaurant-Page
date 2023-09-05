@@ -92,7 +92,8 @@ ul{
 }
 
 .menu{
-    display: grid;
+    margin-top: 15%;
+   display: grid;
    place-content: center;
    width: 50%;
    background-color: var(--sub-color);
@@ -133,9 +134,7 @@ ul{
     font-size: 1.2rem;}
 
 
-/* .menu img{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+.menu img{
+    max-width: 100%;
     
-} */
+}
