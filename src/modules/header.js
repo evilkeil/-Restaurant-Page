@@ -18,13 +18,15 @@ export default function HeaderComponent(){
 
     //  btns
     const home = document.createElement('li');
-    home.setAttribute('data-selected', '')
+    home.setAttribute('data-selected', 'true')
     home.textContent="HOME";
     ul.appendChild(home);
     const menu = document.createElement('li');
+    menu.setAttribute('data-selected', 'false');
     menu.textContent="MENU";
     ul.appendChild(menu);
     const contact = document.createElement('li');
+    contact.setAttribute('data-selected', 'false');
     contact.textContent="CONTACT";
     ul.appendChild(contact);
 
