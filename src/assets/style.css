@@ -90,3 +90,34 @@ ul{
     padding:50px;
     font-size: 2rem;
 }
+
+.menu{
+    display: grid;
+   place-content: center;
+   border: 1px solid red;
+   width: 50%;
+}
+
+.item-1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "text img"; /* Reverse order for item-1 */
+}
+
+.item-2{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-areas: "img text"; 
+}
+.img2{
+    grid-area: "img"; 
+}
+.text2{
+    grid-area: "text";
+}
+.item-3 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "text img"; 
+}
+
