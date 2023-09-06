@@ -14,10 +14,10 @@ export const menuItems = {
 
 }
 
-export const contactItems = {
-    address:"Address: 123 Spice Lane, Colombo, Sri Lanka",
-    phone: "Phone: +94 11 1234 5678",
-    email:"Email: info@spiceisledelights.lk",
-    website:"Website: www.spiceisledelights.lk",
-    ending:"At Spice Isle Delights, we take pride in offering a warm and welcoming atmosphere where you can savor the tastes of Sri Lanka in every bite. Whether you're a seasoned spice enthusiast or new to Sri Lankan cuisine, our dedicated chefs are here to provide you with a memorable dining experience. Come join us and embark on a gastronomic adventure like no other, as we bring the flavors of the Spice Isle to your table."
-}
+export const contactItems = [
+    "Address: 123 Spice Lane, Colombo, Sri Lanka",
+    "Phone: +94 11 1234 5678",
+    "Email: info@spiceisledelights.lk",
+    "Website: www.spiceisledelights.lk",
+    "At Spice Isle Delights, we take pride in offering a warm and welcoming atmosphere where you can savor the tastes of Sri Lanka in every bite. Whether you're a seasoned spice enthusiast or new to Sri Lankan cuisine, our dedicated chefs are here to provide you with a memorable dining experience. Come join us and embark on a gastronomic adventure like no other, as we bring the flavors of the Spice Isle to your table."
+]
