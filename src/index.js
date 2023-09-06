@@ -25,4 +25,5 @@ import toggleBtn from '/src/modules/buttonEventListerners.js';
     }();
       
   // document.body.appendChild(homePageComponent());   //commented out so that i can see the other page
-  document.body.appendChild(menuPageComponent());
+  // document.body.appendChild(menuPageComponent()); //commented out so that i can see the other page
+  // document.body.appendChild(contactPageComponent());
