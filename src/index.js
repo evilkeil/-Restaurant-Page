@@ -20,9 +20,9 @@ import toggleBtn from '/src/modules/buttonEventListerners.js';
       const btns = [homeLi,menuLi,contactLi];
 
     function hasChild(){
-      const doesntHavePageOne = !parent.querySelector('.container') !== null;
-      const doesntHavePageTwo = parent.querySelector('.menu') !== null;
-      const doesntHavePageThree = parent.querySelector('.contact') !== null;
+      const doesntHavePageOne = !document.body.querySelector('.container');
+      const doesntHavePageTwo = !document.body.querySelector('.menu');
+      const doesntHavePageThree = !document.body.querySelector('.contact');
 
       return{
         doesntHavePageOne,
@@ -46,11 +46,25 @@ import toggleBtn from '/src/modules/buttonEventListerners.js';
         }
       }
     };
-    
+
+    function removePage(){
+      const check = hasChild();
+      if(check.doesntHavePageOne === false){
+        const pg1 = document.querySelector('.container');
+        document.body.removeChild(pg1);
+      }else if(check.doesntHavePageTwo === false){
+        const pg2 = document.body.querySelector('.menu');
+        document.body.removeChild(pg2);
+      }else if(check.doesntHavePageThree === false){
+        const pg3 = document.body.querySelector('.contact');
+        document.body.removeChild(pg3);
+       } }
+
       btns.forEach((btn)=>{
         btn.addEventListener('click',(e)=>{
           toggleBtn(e,homeLi,menuLi,contactLi,navbtns);
-          togglePage()
+          removePage();
+          togglePage();
         })
 
       })
