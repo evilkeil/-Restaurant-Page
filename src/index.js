@@ -2,6 +2,7 @@ import '/src/assets/style.css';
 import HeaderComponent from '/src/modules/header.js';
 import homePageComponent from '/src/modules/about.js';
 import menuPageComponent from '/src/modules/menu.js';
+import contactPageComponent from '/src/modules/contact.js';
 import toggleBtn from '/src/modules/buttonEventListerners.js';
 
 
@@ -26,4 +27,4 @@ import toggleBtn from '/src/modules/buttonEventListerners.js';
       
   // document.body.appendChild(homePageComponent());   //commented out so that i can see the other page
   // document.body.appendChild(menuPageComponent()); //commented out so that i can see the other page
-  // document.body.appendChild(contactPageComponent());
+  document.body.appendChild(contactPageComponent());

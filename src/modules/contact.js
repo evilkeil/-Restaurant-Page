@@ -37,4 +37,5 @@ export default function contactPageComponent(){
 
     contact.appendChild(createinfoComponent());
     contact.appendChild(createFinalComponent());
+    return contact;
 }
